@@ -1,0 +1,15 @@
+{
+  "name": "bank-domains-ui",
+  "local_port": 56996,
+  "entrypoint": "bun run dev",
+  "publish": {
+    "label": "bank-domains-ui",
+    "type": "http",
+    "entrypoint": "bun run prod",
+    "published_port": 52343,
+    "env": {
+      "NODE_ENV": "production",
+      "ZO_CLIENT_IDENTITY_TOKEN": "none"
+    }
+  }
+}
