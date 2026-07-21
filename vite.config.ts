@@ -4,8 +4,8 @@ import react from "@vitejs/plugin-react";
 import { defineConfig } from "vite";
 
 export default defineConfig({
+  base: "/bank-domains-ui/",
   plugins: [
-    // React Compiler auto-memoizes components: skip hand-written useMemo/useCallback.
     react({
       babel: {
         plugins: [["babel-plugin-react-compiler", {}]],
